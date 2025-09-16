@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" th:href="@{/img/icon/logo.svg}" type="image/x-icon" />
+	<!-- sweet alert -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+	<!-- Bootstrap Icons CDN -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+	<link rel="shortcut icon" href="/img/logo.svg" type="image/x-icon" />
+	<title>FaceFood - Receta</title>
+	<link rel="stylesheet" th:href="@{/css/styles.css}">
+	<script th:src="@{/js/main.js}" type="module"></script>
+</head>
+
+<body>
+	<div class="container">
+		<!-- Sidebar -->
+		<aside class="sidebar" id="sidebar">
+			<div class="t-center mb-3 cursor" id="back-main">
+				<img src="/facefood/img/icon/logo-text.svg" alt="logo" class="w-100" />
+			</div>
+			<div class="avatar-container">
+				<img id="avatar" class="avatar-img w-90 fade-zoom" src="/facefood/img/avatar/default.png" alt="Avatar"
+					loading="lazy">
+			</div>
+
+			<span class="a-icons fx-csb my-1 mt-2">
+				<i class="bi bi-pencil-square cursor icon" title="editar receta" id="editrecipe" style="opacity:0"></i>
+				<i class="bi bi-plus-circle cursor icon" id="addrecipe" title="añadir receta"></i>
+				<i class="bi bi-trash3 cursor icon" title="borrar receta" id="deleterecipe" style="opacity:0"></i>
+			</span>
+		</aside>
+		<!-- Overlay -->
+		<div id="overlay" class="overlay"></div>
+
+		<!-- Main Content -->
+		<main class="content pl-4">
+			<nav class="nav-1 sm-display-block">
+				<!-- Botón buscar solo visible en móvil -->
+				<div class="mobile-menu mobile-search" id="search-mobile">
+					<i class="bi bi-list"></i>
+				</div>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span class="a-icons fx-ce my-1 sm-fx-end">
+					<i class="bi bi-gear-fill cursor" id="settings-icon" title="settings"></i>
+				</span>
+
+				<!-- Menu desplegable-->
+				<div id="settings-menu" class="menu-dropdown">
+					<ul>
+						<li><a href="#" id="account">Mi cuenta</a></li>
+						<li><a href="#" id="logout">Cerrar Sesión</a></li>
+					</ul>
+				</div>
+			</nav>
+
+			<!--Receta-->
+			<div class="recipe scroll" id="recipe">
+				<!-- Contenido principal -->
+				<div class="recipe-header sm-display-block">
+					<div class="r-header-left">
+						<div class="recipe-top">
+							<img id="r-flag" src="/facefood/img/flags/espana.png" alt="Bandera España"
+								class="recipe-flag fade-in">
+							<div id="r-rating" class="recipe-rating"><span id="r-rating-txt"></span></div>
+						</div>
+						<h1 id="title" class="recipe-title mt-2"></h1>
+						<p class="small bold"><span id="pers">4 Pers.</span> <i class="bi bi-clock pl-2"></i> <span
+								id="temp">30 min.</span></p>
+						<div class="r-header-right t-center fav-container fade-zoom" style="position: relative;">
+							<div class="recipe-img-container">
+								<img id="r-main-img" src="/facefood/img/recetas/default.png" alt="Imagen Receta" class="w-250 br-1 sm-m-1">
+								<div class="favorite-icon-wrapper">
+									<img id="favorite-icon-detail" src="/facefood/img/icon/emptyheart.svg"
+										alt="favorito" class="favorite-icon-detail favorite-update" data-receta-id=""
+										data-favorita="false">
+								</div>
+							</div>
+						</div>
+						<p class="recipe-pres mdm" id="explicacion"></p>
+
+						<div class="recipe-user">
+							<div class="avatar-container t-center w-1 fade-in">
+								<img id="u-img" src="/facefood/img/avatar/default.png" alt="Usuario"
+									class="avatar-img w-6px" loading="lazy">
+							</div>
+							<p class="w-50 sm-w-70"><strong id="usuario"></strong><br><span id="u-pres"
+									class="smll"></span></p>
+						</div>
+					</div>
+
+				</div>
+
+				<h3 class="mb-2">Ingredientes</h3>
+				<div class="g-col-4 mb-3 bg-lgorange sm-display-block fade-in" id="list-ing">
+					<div class="icontainer">
+						<ul class="ulcant" id="cant"></ul>
+						<ul class="uling" id="ing"></ul>
+					</div>
+				</div>
+
+				<div class="paso sm-display-block" id="paso">
+					<div class="paso-img">
+						<img src="/facefood/img/recetas/lasanya.jpg" alt="Receta" class="w-150 br-1 fade-in"
+							loading="lazy">
+					</div>
+					<div class="paso-text">
+						<h3 class="paso-title">Paso</h3>
+						<p class="paso-p"></p>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+</body>
+
+</html>

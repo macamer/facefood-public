@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" th:href="@{/css/style.css}" />
+	<title>¡Oops! Algo salió mal</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			text-align: center;
+			background-color: #f8f9fa;
+			color: #333;
+			padding: 50px;
+		}
+
+		.container {
+			max-width: 600px;
+			margin: auto;
+			padding: 30px;
+			background: white;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+
+		h1 {
+			font-size: 2.5em;
+			color: #dc3545;
+		}
+
+		p {
+			font-size: 1.2em;
+		}
+
+		.emoji {
+			font-size: 4em;
+		}
+
+		.back {
+			display: inline-block;
+			margin-top: 20px;
+			padding: 10px 20px;
+			color: white;
+			background: #007bff;
+			text-decoration: none;
+			border-radius: 5px;
+		}
+
+		.back:hover {
+			background: #0056b3;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="emoji">😵‍💫</div>
+		<h1>¡Oops! Algo salió mal</h1>
+		<p th:text="${errorMessage}">Parece que algo no salió como esperábamos.</p>
+		<p>Pero no te preocupes, estamos trabajando en ello.</p>
+		<a th:href="@{/}" class="back">Volver al Inicio</a>
+	</div>
+</body>
+
+</html>

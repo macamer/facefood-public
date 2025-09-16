@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" th:href="@{/img/icon/logo.svg}" type="image/x-icon" />
+	<!-- sweet alert -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	
+	<link rel="stylesheet" th:href="@{/css/styles.css}" />
+	<script th:src="@{./js/main.js}" type="module"></script>
+	<title>Login</title>
+</head>
+
+<body class="bg-img g-body">
+	<header class="header">
+		<div class="fx-cs">
+			<a th:href="@{/}"><img src="/facefood/img/icon/logo-text.svg" alt="logo" class="w-80" /></a>
+		</div>
+	</header>
+	<main class="fx-cc">
+		<div class="login-container bg-br2-white m-2 h-80 w-40 fade-zoom">
+			<!-- circulo -->
+			<div class="form h-100 a-cont-c">
+				<!-- formulario -->
+				<form action="#" method="GET" class="fx-cc-col">
+					<div>
+						<label for="user" class="smll"> Usuario </label>
+						<input type="text" id="user" placeholder="Introduce usuario" class="input w-100 fx-cc-col w-250" />
+					</div>
+					<div>
+						<label for="pass" class="smll"> Contraseña </label>
+						<input type="password" id="pass" placeholder="Introduce Contraseña" class="input w-100 fx-cc-col w-250" />
+					</div>
+					<div id=error-container class="error-container">
+						<!--  <p th:utext="${errorMessage}" class="error"></p>-->
+					</div>
+					<input type="submit" value="INICIAR SESIÓN" id="btnLogin" class="btn btn-primary w-250" />
+					<input type="button" value="REGISTRARSE" id="register" class="btn btn-secondary w-250" />
+					<a href="#" id="forgot" class="link">¿Olvidaste tu contraseña?</a>
+				</form>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<p class="footer-text">© 2024 Maria Cavaller | Creado con cariño 💻</p>
+	</footer>
+</body>
+
+</html>

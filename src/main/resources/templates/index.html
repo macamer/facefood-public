@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" th:href="@{/img/icon/logo.svg}" type="image/x-icon" />
+	<link rel="stylesheet" th:href="@{/css/styles.css}" />
+	<script th:src="@{./js/main.js}" type="module"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+	<title>FaceFood</title>
+</head>
+
+<body class="g-body">
+	<header class="header">
+		<div class="logotext-container">
+			<a th:href="@{/}"><img src="img/icon/logo-text.svg" alt="logo" class="logotext" /></a>
+		</div>
+	</header>
+
+	<main class="h-100 bg-img">
+		<section class="main fx-csb">
+			<div>
+				<h3 class="fade-in main-title">LA RED SOCIAL PARA LOS <span class="red">AMANTES</span> DE LA COMIDA</h3>
+				<h5 class="fade-in">Y a ti, ¿Te gusta cocinar?</h5>
+				<div class="buttons">
+					<button id="login" class="btn btn-primary fade-zoom">INICIAR SESIÓN</button>
+					<button id="register" class="btn btn-secondary fade-zoom">REGISTRARSE</button>
+					<!-- <button id="guest" class="btn-guest">VER RECETAS</button> -->
+				</div>
+			</div>
+		</section>
+		<section class="carousel-section pt-5" style="background-color: white;">
+			<div class="t-center" style="gap: 0.5rem">
+				<h4 class="carousel-title fade-in ">Recetas destacadas</h4>
+			</div>
+			<!--<div class="carousel fade-in" id="carousel-recetas">-->
+			<div class="carousel-wrapper">
+				<button class="arrow left"><i class="bi bi-arrow-left-circle"></i></button>
+				<div class="scroll-zone left"></div>
+
+				<div id="carousel-recetas" class="carousel-scroll fade-zoom"></div>
+
+				<div class="scroll-zone right"></div>
+				<button class="arrow right"><i class="bi bi-arrow-right-circle"></i></button>
+			</div>
+		</section>
+		<section class="w-100 t-center fx-cc" style="background-color: white;">
+			<a href="/facefood/main" class="fx-css"><img src="/facefood/img/explorar.png" alt="Explorar"
+					class="w-50 cursor sz-img-center"></a>
+		</section>
+		<section class="carousel-section pt-5" style="background-color: white; margin:0">
+			<div class="t-center" style="gap: 0.5rem">
+				<h4 class="carousel-title fade-in">Sugerencias</h4>
+			</div>
+			<!--<div class="carousel fade-in" id="carousel-recetas">-->
+			<div class="carousel-wrapper">
+				<div id="carousel-sugerencias" class="carousel-scroll fade-zoom fx-cc"></div>
+			</div>
+		</section>
+	</main>
+	
+	<footer class="fx-cc">
+		<p class="smll">© 2025 Maria Cavaller | Creado con cariño ❤️</p>
+	</footer>
+</body>
+
+</html>

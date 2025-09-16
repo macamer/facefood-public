@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" th:href="@{/img/icon/logo.svg}" type="image/x-icon" />
+	<!-- sweet alert -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+	<!-- Bootstrap Icons CDN -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+	<link rel="shortcut icon" href="/img/logo.svg" type="image/x-icon" />
+	<link rel="stylesheet" th:href="@{/css/styles.css}" />
+	<script th:src="@{./js/main.js}" type="module"></script>
+	<title>FaceFood</title>
+</head>
+
+<body>
+	<div class="container">
+		<!-- Sidebar -->
+
+		<aside class="sidebar" id="sidebar">
+			<div class="fx-cs mb-3 cursor" id="back-home">
+				<img src="img/icon/logo-text.svg" alt="logo" class="logotext" style="width:100%" />
+			</div>
+			<div class="avatar-container">
+				<img id="avatar" class="avatar-img w-80 fade-zoom" src="img/avatar/default.png" alt="Avatar"
+					loading="lazy">
+			</div>
+
+			<form method="GET" class="fade-zoom">
+				<div class="buscador w-100">
+					<input type="search" name="buscador" id="buscador"
+						placeholder="Busca por título o ingrediente o usuario" />
+				</div>
+
+				<div class="filter">
+					<label for="order" class="smll"> Ordenadar por</label>
+					<select id="order" class="input" style="width: 100%">
+						<option value="-1" selected>Selecciona opción</option>
+						<option value="1">Más valoradas</option>
+						<option value="2">Más recientes</option>
+						<option value="3">Más antiguas</option>
+					</select>
+					<label class="filter-label smll">Por país</label>
+					<select id="country" class="input" style="width: 100%">
+						<option value="-1" selected>Selecciona país</option>
+					</select>
+					<p id="errorMessage" class="error-solved"></p>
+
+					<input type="submit" value="Buscar" class="btn btn-primary w-100" id="search" style="margin: 5px 0">
+					<input type="reset" value="Limpiar" class="btn btn-secondary w-100" id="reset-search"
+						style="margin: 5px 0">
+				</div>
+			</form>
+		</aside>
+		<!-- Overlay -->
+		<div id="overlay" class="overlay"></div>
+
+		<!-- Main Content -->
+		<main class="content">
+			<nav class="nav-1" id="menu">
+				<!-- Botón buscar solo visible en móvil -->
+				<div class="mobile-menu mobile-search" id="search-mobile">
+					<i class="bi bi-search"></i>
+				</div>
+				<div class="nav-links" id="nav-links">
+					<a class="a a-active" id="sugerencias">
+						<i class="bi bi-egg-fried"></i>
+						<span class="nav-text">Sugerencias</span>
+					</a>
+					<a class="a a-desabled" id="favoritos">
+						<i class="bi bi-heart"></i>
+						<span class="nav-text">Favoritos</span>
+					</a>
+					<a class="a a-desabled" id="recetas">
+						<i class="bi bi-tags"></i>
+						<span class="nav-text">Mis Recetas</span>
+					</a>
+				</div>
+				<span class="a-icons fx-csb my-1">
+					<!--<img class="cursor" id="addrecipe" src="img/icon/plus.svg" title="añadir receta" alt="add">-->
+					<!--<img class="cursor" id="settings-icon" src="./img/icon/settings.svg" title="settings"
+						alt="settings">-->
+					<i class="bi bi-plus-circle cursor icon" id="addrecipe" title="añadir receta"></i>
+					<i class="bi bi-gear-fill cursor icon" id="settings-icon" title="settings"></i>
+				</span>
+
+				<!-- Menu desplegable-->
+				<div id="settings-menu" class="menu-dropdown">
+					<ul>
+						<li><a href="#" id="account">Mi cuenta</a></li>
+						<li><a href="#" id="logout">Cerrar Sesión</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="recipe-grid scroll fav-container" id="recipe-grid"></div>
+		</main>
+	</div>
+</body>
+
+</html>
