@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<html lang="es">
 
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="shortcut icon" th:href="@{/img/icon/logo.svg}" type="image/x-icon" />
-	<link rel="stylesheet" th:href="@{/css/styles.css}" />
-	<script th:src="@{./js/main.js}" type="module"></script>
+	<link rel="shortcut icon" href="../static/img/icon/logo.svg" type="image/x-icon" />
+	<link rel="stylesheet" href="../static/css/styles.css" />
+	<script src="../static/js/mainDEMO.js" type="module"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 	<title>FaceFood</title>
 </head>
@@ -14,7 +14,7 @@
 <body class="g-body">
 	<header class="header">
 		<div class="logotext-container">
-			<a th:href="@{/}"><img src="img/icon/logo-text.svg" alt="logo" class="logotext" /></a>
+			<a href="index.html"><img src="../static/img/icon/logo-text.svg" alt="logo" class="logotext" /></a>
 		</div>
 	</header>
 
@@ -26,7 +26,6 @@
 				<div class="buttons">
 					<button id="login" class="btn btn-primary fade-zoom">INICIAR SESIÓN</button>
 					<button id="register" class="btn btn-secondary fade-zoom">REGISTRARSE</button>
-					<!-- <button id="guest" class="btn-guest">VER RECETAS</button> -->
 				</div>
 			</div>
 		</section>
@@ -46,7 +45,7 @@
 			</div>
 		</section>
 		<section class="w-100 t-center fx-cc" style="background-color: white;">
-			<a href="/facefood/main" class="fx-css"><img src="/facefood/img/explorar.png" alt="Explorar"
+			<a href="main.html" class="fx-css"><img src="../static/img/explorar.png" alt="Explorar"
 					class="w-50 cursor sz-img-center"></a>
 		</section>
 		<section class="carousel-section pt-5" style="background-color: white; margin:0">
@@ -61,7 +60,7 @@
 	</main>
 	
 	<footer class="fx-cc">
-		<p class="smll">© 2025 Maria Cavaller | Creado con cariño ❤️</p>
+		<p class="smll">© 2025 <a href="https://www.mariacavaller.com" target="_blank">Maria Cavaller</a> | Creado con cariño ❤️</p>
 	</footer>
 </body>
 
