@@ -1,0 +1,56 @@
+{
+  "id": 7,
+  "titulo": "Shakshuka",
+  "explicacion": "Huevos escalfados en salsa de tomate con especias.",
+  "autor": {
+    "id": 1,
+    "usuario": "juanp"
+  },
+  "pais": "Egipto",
+  "foto": "shakshuka.jpg",
+  "ingredientes": [
+    {
+      "nombre": "Tomate",
+      "cantidad": "2 ud."
+    },
+    {
+      "nombre": "Pimiento rojo",
+      "cantidad": "1 ud."
+    },
+    {
+      "nombre": "Huevo",
+      "cantidad": "4 ud."
+    },
+    {
+      "nombre": "Comino",
+      "cantidad": "al gusto"
+    },
+    {
+      "nombre": "Cebolla",
+      "cantidad": "1 ud."
+    },
+    {
+      "nombre": "Ajo",
+      "cantidad": "2 dientes"
+    },
+    {
+      "nombre": "Aceite de oliva",
+      "cantidad": "2 cucharadas"
+    },
+    {
+      "nombre": "Cilantro",
+      "cantidad": "al gusto"
+    },
+    {
+      "nombre": "Chile",
+      "cantidad": "opcional"
+    }
+  ],
+  "pasos": [
+    "Sofríe cebolla y ajo con aceite.",
+    "Añade tomate y pimiento; cocina hasta espesar. Sazona con comino, sal y pimienta.",
+    "Haz huecos y casca los huevos; tapa y cocina hasta cuajar las claras."
+  ],
+  "averageRating": 4.0,
+  "ratingsCount": 3
+}

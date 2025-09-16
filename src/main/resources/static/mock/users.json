@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "nombre": "Juan",
+    "ape": "Pérez",
+    "usuario": "juanp",
+    "avatar": "juan.jpg",
+    "pais": "Alemania",
+    "presentacion": "Apasionado por la cocina casera y siempre en busca de nuevas recetas para sorprender a familiares y amigos."
+  },
+  {
+    "id": 2,
+    "nombre": "María",
+    "ape": "García",
+    "usuario": "mariag",
+    "avatar": "maria.png",
+    "pais": "Andorra",
+    "presentacion": "Amante de la cocina tradicional, con especial interés en preservar las recetas de generaciones pasadas."
+  },
+  {
+    "id": 3,
+    "nombre": "Giovanni",
+    "ape": "Pol",
+    "usuario": "giovannip",
+    "avatar": "giovanni.png",
+    "pais": "Australia",
+    "presentacion": "Apasionado de la cocina italiana, en especial de la pasta y la pizza."
+  }
+]

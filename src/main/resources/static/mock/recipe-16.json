@@ -1,0 +1,36 @@
+{
+  "id": 16,
+  "titulo": "Carne con patatas",
+  "explicacion": "Guiso clásico de carne con patata.",
+  "autor": {
+    "id": 2,
+    "usuario": "mariag"
+  },
+  "pais": "Alemania",
+  "foto": "plato_fuerte.jpg",
+  "ingredientes": [
+    {
+      "nombre": "Carne de res",
+      "cantidad": "400 g"
+    },
+    {
+      "nombre": "Patata",
+      "cantidad": "2 ud."
+    },
+    {
+      "nombre": "Ajo",
+      "cantidad": "2 dientes"
+    },
+    {
+      "nombre": "Sal",
+      "cantidad": "al gusto"
+    }
+  ],
+  "pasos": [
+    "Dora la carne en aceite caliente.",
+    "Añade cebolla y ajo; cocina suave.",
+    "Incorpora patatas y guisa hasta que estén tiernas."
+  ],
+  "averageRating": 0.0,
+  "ratingsCount": 0
+}

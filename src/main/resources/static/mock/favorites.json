@@ -1,0 +1,26 @@
+[
+  {
+    "id_usu": 1,
+    "id_receta": 2
+  },
+  {
+    "id_usu": 2,
+    "id_receta": 1
+  },
+  {
+    "id_usu": 2,
+    "id_receta": 6
+  },
+  {
+    "id_usu": 2,
+    "id_receta": 10
+  },
+  {
+    "id_usu": 1,
+    "id_receta": 6
+  },
+  {
+    "id_usu": 2,
+    "id_receta": 12
+  }
+]

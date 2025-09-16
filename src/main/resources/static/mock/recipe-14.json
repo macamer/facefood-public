@@ -1,0 +1,38 @@
+{
+  "id": 14,
+  "titulo": "Maki sushi",
+  "explicacion": "Rollos de arroz y relleno envueltos en alga nori.",
+  "autor": {
+    "id": 3,
+    "usuario": "giovannip"
+  },
+  "pais": "Japón",
+  "foto": "maki.jpg",
+  "ingredientes": [
+    {
+      "nombre": "Arroz para sushi",
+      "cantidad": "100 g"
+    },
+    {
+      "nombre": "Vinagre de arroz",
+      "cantidad": "50 ml"
+    },
+    {
+      "nombre": "Salmón o atún",
+      "cantidad": "200 g"
+    },
+    {
+      "nombre": "Alga nori",
+      "cantidad": "1 hoja"
+    }
+  ],
+  "pasos": [
+    "Lava y cuece el arroz; enfría con vinagre azucarado y sal.",
+    "Extiende el arroz sobre el nori.",
+    "Añade el relleno (pescado, pepino o aguacate).",
+    "Enrolla con esterilla y compacta.",
+    "Corta en porciones. Sirve con soja, wasabi y jengibre."
+  ],
+  "averageRating": 0.0,
+  "ratingsCount": 0
+}

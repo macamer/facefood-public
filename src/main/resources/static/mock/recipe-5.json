@@ -1,0 +1,41 @@
+{
+  "id": 5,
+  "titulo": "Tortilla española",
+  "explicacion": "La tortilla de patatas es uno de los platos más emblemáticos de la cocina española.",
+  "autor": {
+    "id": 1,
+    "usuario": "juanp"
+  },
+  "pais": "España",
+  "foto": "main.jpg",
+  "ingredientes": [
+    {
+      "nombre": "Huevo",
+      "cantidad": "6 ud."
+    },
+    {
+      "nombre": "Patata",
+      "cantidad": "500 g"
+    },
+    {
+      "nombre": "Aceite de oliva",
+      "cantidad": "100 ml"
+    },
+    {
+      "nombre": "Cebolla",
+      "cantidad": "1 ud."
+    },
+    {
+      "nombre": "Sal",
+      "cantidad": "al gusto"
+    }
+  ],
+  "pasos": [
+    "Lava y pela las patatas; córtalas en rodajas finas.",
+    "Confita las patatas en aceite de oliva a fuego medio 15–20 min (con cebolla si quieres).",
+    "Mezcla con huevos batidos y sal; deja reposar unos minutos.",
+    "Cuaja en sartén por ambos lados hasta el punto deseado."
+  ],
+  "averageRating": 0.0,
+  "ratingsCount": 0
+}

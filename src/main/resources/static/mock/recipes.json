@@ -1,0 +1,104 @@
+[
+  {
+    "id": 1,
+    "titulo": "Nata y fresas",
+    "duracion": 30,
+    "num_personas": 4,
+    "tipo": "Postre",
+    "autor": {
+      "id": 1,
+      "usuario": "juanp"
+    },
+    "pais": "Alemania",
+    "foto": "main.jpg",
+    "visualizaciones": 100,
+    "fecha": "2024-05-12T10:00:00Z",
+    "averageRating": 4.67,
+    "ratingsCount": 3
+  },
+  {
+    "id": 2,
+    "titulo": "Quinoa",
+    "duracion": 30,
+    "num_personas": 2,
+    "tipo": "Comida",
+    "autor": {
+      "id": 1,
+      "usuario": "juanp"
+    },
+    "pais": "Australia",
+    "foto": "main.jpg",
+    "visualizaciones": 0,
+    "fecha": "2024-05-13T10:00:00Z",
+    "averageRating": 3.33,
+    "ratingsCount": 3
+  },
+  {
+    "id": 5,
+    "titulo": "Tortilla española",
+    "duracion": 30,
+    "num_personas": 4,
+    "tipo": "Comida",
+    "autor": {
+      "id": 1,
+      "usuario": "juanp"
+    },
+    "pais": "España",
+    "foto": "main.jpg",
+    "visualizaciones": 0,
+    "fecha": "2024-05-20T10:00:00Z",
+    "averageRating": 0.0,
+    "ratingsCount": 0
+  },
+  {
+    "id": 7,
+    "titulo": "Shakshuka",
+    "duracion": 60,
+    "num_personas": 2,
+    "tipo": "Cena",
+    "autor": {
+      "id": 1,
+      "usuario": "juanp"
+    },
+    "pais": "Egipto",
+    "foto": "shakshuka.jpg",
+    "visualizaciones": 0,
+    "fecha": "2024-05-25T10:00:00Z",
+    "averageRating": 4.0,
+    "ratingsCount": 3
+  },
+  {
+    "id": 14,
+    "titulo": "Maki sushi",
+    "duracion": 30,
+    "num_personas": 6,
+    "tipo": "Cena",
+    "autor": {
+      "id": 3,
+      "usuario": "giovannip"
+    },
+    "pais": "Japón",
+    "foto": "main.jpg",
+    "visualizaciones": 0,
+    "fecha": "2024-06-05T10:00:00Z",
+    "averageRating": 0.0,
+    "ratingsCount": 0
+  },
+  {
+    "id": 16,
+    "titulo": "Carne con patatas",
+    "duracion": 60,
+    "num_personas": 2,
+    "tipo": "Plato principal",
+    "autor": {
+      "id": 2,
+      "usuario": "mariag"
+    },
+    "pais": "Alemania",
+    "foto": "main.jpg",
+    "visualizaciones": 250,
+    "fecha": "2024-06-10T10:00:00Z",
+    "averageRating": 0.0,
+    "ratingsCount": 0
+  }
+]

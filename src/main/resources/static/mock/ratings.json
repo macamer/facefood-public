@@ -1,0 +1,57 @@
+[
+  {
+    "id_usuario": 1,
+    "id_receta": 1,
+    "calificacion": 5
+  },
+  {
+    "id_usuario": 2,
+    "id_receta": 1,
+    "calificacion": 4
+  },
+  {
+    "id_usuario": 3,
+    "id_receta": 1,
+    "calificacion": 5
+  },
+  {
+    "id_usuario": 1,
+    "id_receta": 2,
+    "calificacion": 4
+  },
+  {
+    "id_usuario": 2,
+    "id_receta": 2,
+    "calificacion": 3
+  },
+  {
+    "id_usuario": 3,
+    "id_receta": 2,
+    "calificacion": 3
+  },
+  {
+    "id_usuario": 1,
+    "id_receta": 6,
+    "calificacion": 2
+  },
+  {
+    "id_usuario": 2,
+    "id_receta": 6,
+    "calificacion": 1
+  },
+  {
+    "id_usuario": 1,
+    "id_receta": 7,
+    "calificacion": 4
+  },
+  {
+    "id_usuario": 2,
+    "id_receta": 7,
+    "calificacion": 5
+  },
+  {
+    "id_usuario": 3,
+    "id_receta": 7,
+    "calificacion": 3
+  }
+]
