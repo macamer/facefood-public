@@ -7,7 +7,7 @@ Aplicación web para proyecto final de Grado Superior en Desarrollo de Aplicacio
 - Infra (antes): Azure App Service + Azure SQL
 
 ## Demo (Frontend)
-➡️ https://macamer.github.io/facefood-public
+➡️ [https://facefooddemo.netlify.app/]
 
 > Modo demo: datos mock para simular API.
 
